@@ -1,4 +1,4 @@
-package com.example.demo.model.exception;
+package com.gkn.loanapp.model.exception;
 
 public class LoanValidationException extends RuntimeException {
     public LoanValidationException(String message) {

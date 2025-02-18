@@ -1,4 +1,4 @@
-package com.example.demo.model.dto;
+package com.gkn.loanapp.model.dto;
 
 import lombok.Builder;
 

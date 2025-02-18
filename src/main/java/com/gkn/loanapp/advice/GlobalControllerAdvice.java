@@ -1,9 +1,9 @@
-package com.example.demo.advice;
+package com.gkn.loanapp.advice;
 
-import com.example.demo.model.exception.CustomerNotFoundException;
-import com.example.demo.model.exception.LoanInstallmentNotFoundException;
-import com.example.demo.model.exception.LoanNotFoundException;
-import com.example.demo.model.exception.LoanValidationException;
+import com.gkn.loanapp.model.exception.CustomerNotFoundException;
+import com.gkn.loanapp.model.exception.LoanInstallmentNotFoundException;
+import com.gkn.loanapp.model.exception.LoanNotFoundException;
+import com.gkn.loanapp.model.exception.LoanValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

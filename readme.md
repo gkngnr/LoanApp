@@ -22,8 +22,8 @@ This is a **Spring Boot Loan API** for a banking system that allows **Admins** t
 
 ### 1️⃣ Clone the Repository
 ```sh
- git clone https://github.com/your-repository/loan-api.git
- cd loan-api
+ git clone https://github.com/gkngnr/LoanApp.git
+ cd LoanApp
 ```
 
 ### 2️⃣ Build the Project
@@ -59,17 +59,17 @@ Customer2: jane.doe / jane.doex
 ## 📌 API Endpoints
 
 ### 🔹 Loan Management
-| Method | Endpoint | Role | Description |
-|--------|---------|------|-------------|
-| `POST` | `/api/customers` | ADMIN | Create a new customer |
-| `POST` | `/api/loans` | ADMIN | Create a new loan |
-| `GET` | `/api/loans` | ADMIN/CUSTOMER | List loans (Admins get all loans, Customers get only their loans) |
-| `POST` | `/api/loans/pay` | ADMIN | Pay a loan installment |
+| Method | Endpoint            | Role | Description |
+|--------|---------------------|------|-------------|
+| `POST` | `/api/v1/customers` | ADMIN | Create a new customer |
+| `POST` | `/api/v1/loans`       | ADMIN | Create a new loan |
+| `GET` | `/api/v1/loans`       | ADMIN/CUSTOMER | List loans (Admins get all loans, Customers get only their loans) |
+| `POST` | `/api/v1/loan/pay`    | ADMIN | Pay a loan installment |
 
 ### 🔹 Installments
-| Method | Endpoint | Role | Description |
-|--------|---------|------|-------------|
-| `GET` | `/api/installments/{loanId}` | ADMIN/CUSTOMER | List installments for a loan |
+| Method | Endpoint                  | Role | Description |
+|--------|---------------------------|------|-------------|
+| `GET` | `/api/v1/loans/{loanId}/installments` | ADMIN/CUSTOMER | List installments for a loan |
 
 ---
 
@@ -94,8 +94,7 @@ The API uses `@RestControllerAdvice` to return structured error responses. Examp
   "timestamp": "2025-02-14T12:34:56",
   "status": 404,
   "error": "Not Found",
-  "message": "Customer not found with ID 123",
-  "path": "/api/customers/123"
+  "path": "/api/v1/customers/123"
 }
 ```
 

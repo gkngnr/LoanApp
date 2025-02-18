@@ -1,10 +1,10 @@
-package com.example.demo.service;
+package com.gkn.loanapp.service;
 
-import com.example.demo.model.dto.LoanInstallmentResponseDto;
-import com.example.demo.model.entity.Loan;
-import com.example.demo.model.entity.LoanInstallment;
-import com.example.demo.model.mapper.LoanInstallmentMapper;
-import com.example.demo.repository.LoanInstallmentRepository;
+import com.gkn.loanapp.model.dto.LoanInstallmentResponseDto;
+import com.gkn.loanapp.model.entity.Loan;
+import com.gkn.loanapp.model.entity.LoanInstallment;
+import com.gkn.loanapp.model.mapper.LoanInstallmentMapper;
+import com.gkn.loanapp.repository.LoanInstallmentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,7 +1,7 @@
-package com.example.demo.model.mapper;
+package com.gkn.loanapp.model.mapper;
 
-import com.example.demo.model.dto.LoanInstallmentResponseDto;
-import com.example.demo.model.entity.LoanInstallment;
+import com.gkn.loanapp.model.dto.LoanInstallmentResponseDto;
+import com.gkn.loanapp.model.entity.LoanInstallment;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 

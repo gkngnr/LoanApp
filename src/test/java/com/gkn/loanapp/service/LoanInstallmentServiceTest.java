@@ -1,9 +1,8 @@
-package com.example.demo.service;
+package com.gkn.loanapp.service;
 
-import com.example.demo.model.dto.LoanInstallmentResponseDto;
-import com.example.demo.model.entity.Loan;
-import com.example.demo.model.entity.LoanInstallment;
-import com.example.demo.repository.LoanInstallmentRepository;
+import com.gkn.loanapp.model.dto.LoanInstallmentResponseDto;
+import com.gkn.loanapp.model.entity.Loan;
+import com.gkn.loanapp.model.entity.LoanInstallment;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -27,7 +26,7 @@ class LoanInstallmentServiceTest {
     private LoanInstallmentService loanInstallmentService;
 
     @Mock
-    private LoanInstallmentRepository loanInstallmentRepository;
+    private com.gkn.loanapp.repository.LoanInstallmentRepository loanInstallmentRepository;
 
     @Test
     void shouldReturnInstallmentsByLoanIdOrderedByDueDate() {

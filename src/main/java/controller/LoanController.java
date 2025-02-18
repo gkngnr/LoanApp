@@ -1,12 +1,11 @@
-package com.example.demo.controller;
+package controller;
 
-import com.example.demo.model.dto.LoanInstallmentResponseDto;
-import com.example.demo.model.dto.LoanRequestDto;
-import com.example.demo.model.dto.LoanResponseDto;
-import com.example.demo.security.annotations.HasAdminOrCustomerRole;
-import com.example.demo.security.annotations.HasAdminRole;
-import com.example.demo.service.LoanInstallmentService;
-import com.example.demo.service.LoanService;
+import com.gkn.loanapp.model.dto.LoanInstallmentResponseDto;
+import com.gkn.loanapp.model.dto.LoanRequestDto;
+import com.gkn.loanapp.model.dto.LoanResponseDto;
+import com.gkn.loanapp.security.annotations.HasAdminRole;
+import com.gkn.loanapp.service.LoanInstallmentService;
+import com.gkn.loanapp.service.LoanService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
@@ -22,7 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/loans")
 @RequiredArgsConstructor
-@HasAdminOrCustomerRole
+@com.gkn.loanapp.security.annotations.HasAdminOrCustomerRole
 public class LoanController {
 
     private final LoanService loanService;

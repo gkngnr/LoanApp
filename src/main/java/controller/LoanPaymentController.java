@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package controller;
 
-import com.example.demo.model.dto.LoanPaymentRequestDto;
-import com.example.demo.model.dto.LoanPaymentResponseDto;
-import com.example.demo.security.annotations.HasAdminRole;
-import com.example.demo.service.LoanPaymentService;
+import com.gkn.loanapp.model.dto.LoanPaymentRequestDto;
+import com.gkn.loanapp.model.dto.LoanPaymentResponseDto;
+import com.gkn.loanapp.security.annotations.HasAdminRole;
+import com.gkn.loanapp.service.LoanPaymentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

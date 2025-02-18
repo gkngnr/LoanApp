@@ -1,4 +1,4 @@
-package com.example.demo.model.entity;
+package com.gkn.loanapp.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

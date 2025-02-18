@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.gkn.loanapp.repository;
 
-import com.example.demo.model.entity.LoanInstallment;
+import com.gkn.loanapp.model.entity.LoanInstallment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,8 +1,8 @@
-package com.example.demo.service.validator;
+package com.gkn.loanapp.service.validator;
 
-import com.example.demo.model.exception.LoanValidationException;
-import com.example.demo.model.dto.LoanRequestDto;
-import com.example.demo.model.entity.Customer;
+import com.gkn.loanapp.model.dto.LoanRequestDto;
+import com.gkn.loanapp.model.entity.Customer;
+import com.gkn.loanapp.model.exception.LoanValidationException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

@@ -1,9 +1,8 @@
-package com.example.demo.controller;
+package controller;
 
-import com.example.demo.model.dto.CustomerDto;
-import com.example.demo.security.annotations.HasAdminRole;
-import com.example.demo.service.CustomerService;
-import io.swagger.v3.oas.annotations.Operation;
+import com.gkn.loanapp.model.dto.CustomerDto;
+import com.gkn.loanapp.security.annotations.HasAdminRole;
+import com.gkn.loanapp.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,7 +20,6 @@ public class CustomerController {
 
     private final CustomerService customerService;
 
-    @Operation(summary = "List all loans", description = "Retrieve a list of loans")
     @GetMapping
     public ResponseEntity<List<CustomerDto>> getAllCustomers() {
         return ResponseEntity.ok(customerService.getAllCustomers());

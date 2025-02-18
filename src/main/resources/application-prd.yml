@@ -1,31 +1,13 @@
 spring:
-  application:
-    name: BankingLoanApp
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: validate
     show-sql: true
-  datasource:
-    username: adm
-    password: pwd
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-  h2:
-    console:
-      enabled: true
-      path: /h2
 logging:
   level:
     org:
       springframework:
-        security: DEBUG
-springdoc:
-  api-docs:
-    enabled: true
-  swagger-ui:
-    enabled: true
-    path: /swagger-ui.html
+        security: INFO
 loan:
   installments: 6,9,12,24
   minInterestRate: 0.1

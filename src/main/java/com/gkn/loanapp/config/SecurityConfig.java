@@ -1,6 +1,6 @@
-package com.example.demo.config;
+package com.gkn.loanapp.config;
 
-import com.example.demo.security.enums.Role;
+import com.gkn.loanapp.security.enums.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

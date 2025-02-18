@@ -1,4 +1,4 @@
-package com.example.demo.security.annotations;
+package com.gkn.loanapp.security.annotations;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 

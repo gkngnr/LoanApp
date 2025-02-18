@@ -1,6 +1,6 @@
-package com.example.demo.security;
+package com.gkn.loanapp.security;
 
-import com.example.demo.security.enums.Role;
+import com.gkn.loanapp.security.enums.Role;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

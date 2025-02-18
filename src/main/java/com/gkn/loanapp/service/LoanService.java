@@ -1,14 +1,13 @@
-package com.example.demo.service;
+package com.gkn.loanapp.service;
 
-import com.example.demo.model.dto.LoanRequestDto;
-import com.example.demo.model.dto.LoanResponseDto;
-import com.example.demo.model.entity.Customer;
-import com.example.demo.model.entity.Loan;
-import com.example.demo.model.exception.LoanNotFoundException;
-import com.example.demo.model.mapper.LoanMapper;
-import com.example.demo.repository.LoanRepository;
-import com.example.demo.security.enums.Role;
-import com.example.demo.service.validator.LoanCreateValidator;
+import com.gkn.loanapp.model.dto.LoanRequestDto;
+import com.gkn.loanapp.model.dto.LoanResponseDto;
+import com.gkn.loanapp.model.entity.Customer;
+import com.gkn.loanapp.model.entity.Loan;
+import com.gkn.loanapp.model.exception.LoanNotFoundException;
+import com.gkn.loanapp.model.mapper.LoanMapper;
+import com.gkn.loanapp.repository.LoanRepository;
+import com.gkn.loanapp.service.validator.LoanCreateValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -18,8 +17,8 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-import static com.example.demo.security.SecurityUtils.hasAdminRole;
-import static com.example.demo.security.SecurityUtils.hasCustomerRole;
+import static com.gkn.loanapp.security.SecurityUtils.hasAdminRole;
+import static com.gkn.loanapp.security.SecurityUtils.hasCustomerRole;
 
 @Service
 @Transactional(readOnly = true)

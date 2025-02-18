@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package com.gkn.loanapp.security;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

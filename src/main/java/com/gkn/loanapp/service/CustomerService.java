@@ -1,10 +1,10 @@
-package com.example.demo.service;
+package com.gkn.loanapp.service;
 
-import com.example.demo.model.dto.CustomerDto;
-import com.example.demo.model.entity.Customer;
-import com.example.demo.model.exception.CustomerNotFoundException;
-import com.example.demo.model.mapper.CustomerMapper;
-import com.example.demo.repository.CustomerRepository;
+import com.gkn.loanapp.model.dto.CustomerDto;
+import com.gkn.loanapp.model.entity.Customer;
+import com.gkn.loanapp.model.exception.CustomerNotFoundException;
+import com.gkn.loanapp.model.mapper.CustomerMapper;
+import com.gkn.loanapp.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

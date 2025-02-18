@@ -1,14 +1,16 @@
-package com.example.demo.service;
+package com.gkn.loanapp.service;
 
-import com.example.demo.model.dto.LoanPaymentRequestDto;
-import com.example.demo.model.dto.LoanPaymentResponseDto;
-import com.example.demo.model.entity.Loan;
-import com.example.demo.model.entity.LoanInstallment;
+import com.gkn.loanapp.model.dto.LoanPaymentRequestDto;
+import com.gkn.loanapp.model.dto.LoanPaymentResponseDto;
+import com.gkn.loanapp.model.entity.Loan;
+import com.gkn.loanapp.model.entity.LoanInstallment;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -31,6 +33,11 @@ class LoanPaymentServiceTest {
 
     private static final Long LOAN_ID = 1L;
     private final Loan loan = Loan.builder().id(LOAN_ID).build();
+
+    @BeforeEach
+    void setUp() {
+        ReflectionTestUtils.setField(loanPaymentService, "penaltyRate", 0.001);
+    }
 
     @Test
     void shouldPayLoanSuccessfully_WhenAmountIsSufficient() {
