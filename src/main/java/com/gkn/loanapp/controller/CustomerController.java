@@ -1,4 +1,4 @@
-package controller;
+package com.gkn.loanapp.controller;
 
 import com.gkn.loanapp.model.dto.CustomerDto;
 import com.gkn.loanapp.security.annotations.HasAdminRole;
