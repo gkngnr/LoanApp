@@ -1,4 +1,4 @@
-package controller;
+package com.gkn.loanapp.controller;
 
 import com.gkn.loanapp.model.dto.LoanInstallmentResponseDto;
 import com.gkn.loanapp.model.dto.LoanRequestDto;

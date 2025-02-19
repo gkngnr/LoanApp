@@ -49,13 +49,15 @@ public class LoanAppApplication {
                         .username("john.doe")
                         .name("John")
                         .surname("Doe")
-                        .usedCreditLimit(BigDecimal.valueOf(1000.0))
+                        .creditLimit(BigDecimal.valueOf(1000.0))
+                        .usedCreditLimit(BigDecimal.ZERO)
                         .build();
                 var customer2 = Customer.builder()
                         .username("jane.doe")
                         .name("Jane")
                         .surname("Doe")
-                        .usedCreditLimit(BigDecimal.valueOf(2000.0))
+                        .creditLimit(BigDecimal.valueOf(2000.0))
+                        .usedCreditLimit(BigDecimal.ZERO)
                         .build();
 
                 customerRepository.saveAll(List.of(customer1, customer2));

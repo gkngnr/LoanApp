@@ -36,12 +36,6 @@ public class SecurityConfig {
                             .hasAnyRole(Role.ADMIN.name(), Role.CUSTOMER.name())
                         .requestMatchers(HttpMethod.GET, "/api/v1/installments/**")
                             .hasAnyRole(Role.ADMIN.name(), Role.CUSTOMER.name())
-                        .requestMatchers(
-                                "/v3/api-docs/**",  // OpenAPI docs
-                                "/swagger-ui/**",   // Swagger UI static files
-                                "/swagger-ui.html", // Main Swagger page
-                                "/webjars/**"       // WebJars used by Swagger
-                        ).permitAll()
                         .anyRequest().authenticated()
                 )
                 .authenticationManager(authenticationManager)
